@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Квант-коуч-вопрос</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>Квант-коуч-вопросы</h1>
+    <h2>Категории:</h2>
+   
+    <!-- Кнопки для категорий с цветными иконками -->
+    <div class="category-buttons">
+        <button onclick="getRandomQuestion(0)">
+            <span class="icon icon-purple"></span>Осознание желаемого
+        </button>
+        <button onclick="getRandomQuestion(1)">
+            <span class="icon icon-blue"></span>Анализ текущей реальности
+        </button>
+        <button onclick="getRandomQuestion(2)">
+            <span class="icon icon-orange"></span>Обнаружение внутренних ресурсов
+        </button>
+        <button onclick="getRandomQuestion(3)">
+            <span class="icon icon-red"></span>Препятствия и внутренние блоки
+        </button>
+        <button onclick="getRandomQuestion(4)">
+            <span class="icon icon-green"></span>Конкретные шаги к цели
+        </button>
+    </div>
+
+    <!-- Поле для вывода вопроса -->
+    <div>
+        <h2>Выбранный вопрос:</h2>
+        <p id="questionOutput"></p>
+    </div>
+
+    <!-- История вопросов -->
+    <div class="history">
+        <h2>История вопросов:</h2>
+        <ul id="questionHistory"></ul>
+    </div>
+
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+/* Основные стили страницы */
+body {
+    background-color: #1b1b2f; /* Темный фон */
+    color: #e0e0e0; /* Светлый текст */
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h1 {
+    color: #00ffcc; /* Неоново-зеленый цвет */
+    font-size: 24px;
+}
+
+h2 {
+    color: #00ffcc;
+    font-size: 20px;
+    margin-top: 30px;
+}
+
+.category-buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+/* Стили для кнопок */
+button {
+    background-color: #30336b; /* Темно-синий фон кнопки */
+    color: #e0e0e0;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #4a69bd; /* Цвет кнопки при наведении */
+}
+
+li {
+    list-style-type:none;
+}
+/* Стили для иконок */
+.icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px #00ffcc; /* Неоновый эффект */
+}
+
+/* Цвета иконок для категорий */
+.icon-purple { background-color: #FFA726; }
+.icon-blue { background-color: #3F51B5; }
+.icon-orange { background-color: #00ACC1; }
+.icon-red { background-color: #8E24AA; }
+.icon-green { background-color: #F44336; }
+
+/* История вопросов */
+.history {
+    background-color: #162447; /* Темный блок для истории */
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 20px;
+    max-height: 200px;
+    
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+    text-align: left;
+}
+
+/* Адаптация для мобильных устройств */
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+}
